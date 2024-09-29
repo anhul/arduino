@@ -16,13 +16,12 @@ bool ledState = LOW; // LED state
 
 // unsigned long because the time is measured in milliseconds 
 // and will quickly become a bigger number than can be stored in an int.
-unsigned long lastTimeButtonPinStateChanged = 0;  // the last time the button pin state was toggled
+unsigned long lastTimeButtonPinStateChanged = 0;  // the last time the button pin state was changed
 unsigned long debounceDelay = 50;
 
 void setup() {
   pinMode(ledPin, OUTPUT);
   pinMode(buttonPin, INPUT_PULLUP);
-  Serial.begin(9600);
 }
 
 void loop() {
