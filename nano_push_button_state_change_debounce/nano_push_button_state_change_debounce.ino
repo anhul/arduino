@@ -10,9 +10,9 @@ This number will overflow (go back to zero), after approximately 50 days.
 const int ledPin = 2;
 const int buttonPin = 7;
 
-int lastButtonPinState = HIGH; // initial button pin state
-int lastButtonState = HIGH; // initial button state
-bool ledState = LOW; // intial LED state
+int lastButtonPinState = HIGH; // last button pin state
+int lastButtonState = HIGH; // last stable button state
+bool ledState = LOW; // LED state
 
 // unsigned long because the time is measured in milliseconds 
 // and will quickly become a bigger number than can be stored in an int.
